@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+     <!-- START OF HEADER -->
+    <header>
+        <div class="loader-container">
+            <img src="assets/images/png-transparent-airplane-aircraft-logo-airplane-blue-logo-airplane-thumbnail.png" alt="Airplane Logo" class="loader">
+          </div>
+        <section class="count-down">
+            <h3 id="count">Holiday Season Off is ending in</h3>
+            <form action="checkbox">
+              
+                <input type="text" id="days" value="">
+                <label for="days">Days</label>
+             
+                <input type="text" id="hours" value="">
+                <label for="hours">Hours</label>
+               
+                <input type="text" id="minutes" value="">
+                <label for="minutes">Minutes</label>
+               
+                <input type="text" id="seconds" value="">
+                <label for="seconds">Seconds</label>
+            </form>
+        </section>
+        <div class="container">
+            <nav class="my-nav">
+                <div class="find">
+                    <div >
+                        <span><i class="ri-plane-fill"></i></span>
+                        <a href="hotels.html">Find Flight</a>
+                    </div>
+                    <div>
+                        <span><i class="ri-hotel-bed-fill"></i></span>
+                        <a href="flight.html">Find Stay</a>
+                    </div>
+                    <div>
+                        <span><i class="ri-home-smile-2-fill"></i></span>
+                        <a href="index.html">Home</a>
+                    </div>
+                </div>
+                
+                    <img src="assets/images/Logo-removebg-preview-removebg-preview.jpg" alt="">
+                <div class="header-btns">
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- END OF HEADER -->
+    <main>
+
+        <!-- START OF SECTION ONE  -->
+        <section class="hotel-head ">
+            <div class="containerr">
+                <div class="hero">
+                    <h2>Make your Travel Wishlist we'll do the rest.</h2>
+                   <h5>special offers to suit your plan.</h5>
+                </div>
+            </div>
+        </section>
+         <!-- END OF SECTION ONE-->
+
+        <!-- START OF SECTION TWO -->
+        <section class="searching-flights">
+            <div class="containerr">
+                <div class="search-box">
+                    <div class="search-tabs">
+                        <i class="ri-plane-fill"></i>
+                        <a href="#" class="active">Flights</a>
+                    </div>
+                    <div class="input-group">
+                        <label>Enter Desstination</label>
+                        <input type="text" placeholder="istanbul-turkey">
+                    </div>
+                    <div class="input-group">
+                        <label for="check-in">check-in</label>
+                        <input id="check-in" type="date">
+                    </div>
+                    <div class="input-group">
+                        <label id="checkout">Checkout</label>
+                        <input type="date" id="checkout">
+                    </div>
+                    <div class="input-group">
+                        <label for="rooms">Rooms and Guests</label>
+                        <select name="rooms" id="rooms">
+                            <option value="rooms-guest">Guests</option>
+                            <option value="rooms">rooms</option>
+                            <option value="guests">drinks</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- END OF SECTION TWO-->
+
+           <!-- START OF SECTION  THREE-->
+        <section class="hotel-listing">
+            <div class="containerr">
+                <section class="hotel-filter">
+                    <h2>Filters</h2>
+                    <div class="filter-group">
+                        <div class="selector">
+                            <h4>Price</h4>
+                            <span><i class="ri-arrow-up-s-line"></i></span> 
+                        </div>
+                        <div class="range">
+                             <input type="range" min="300" max="1500" value="600">
+                            <span>600</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="rating">
+                        <div class="selector">
+                            <h4>Rating</h4>
+                            <span><i class="ri-arrow-up-s-line"></i></span> 
+                        </div>
+                        <input type="checkbox" id="zero" name="rating" value="0">
+                        <label for="zero"> 0+</label>
+                        <input type="checkbox" id="one" name="rating" value="1">
+                        <label for="one"> 1+</label>
+                        <input type="checkbox" id="two" name="rating" value="2">
+                        <label for="two"> 2+</label>
+                        <input type="checkbox" id="three" name="rating" value="3">
+                        <label for="three"> 3+</label>
+                        <input type="checkbox" id="four" name="rating" value="4">
+                        <label for="four"> 4+</label>
+                    </div>
+                    <hr>
+                    <div class="freebies">
+                        <div class="selector">
+                            <h4>Freebies</h4>
+                            <span><i class="ri-arrow-up-s-line"></i></span> 
+                        </div>
+                       
+                        <input type="checkbox" id="breakfast" value="breakfast">
+                        <label for="breakfast">Free-breakfast</label> <br>
+                        <input type="checkbox" id="internet" value="Internet">
+                        <label for="internet">Free Internet</label> <br>
+                        <input type="checkbox" id="parking" value="parking">
+                        <label for="parking">Free Parking</label> <br>
+                        <input type="checkbox" id="shuttle" value="airport shuttle">
+                        <label for="shuttle">Free Airport Shuttle</label> <br>
+                       
+                    </div>
+                    <hr>
+                    <div class="facilities">
+                        <div class="selector">
+                            <h4>Facilities</h4>
+                            <span><i class="ri-arrow-up-s-line"></i></span> 
+                        </div>
+                
+                        <input type="checkbox" id="front-desk" value="Front-desk">
+                        <label for="front-desk">24 Hours Front Desk</label> <br>
+                        <input type="checkbox" id="aircondition" value="aircondition">
+                        <label for="aircondition">Air Conditioned</label> <br>
+                        <input type="checkbox" id="fitness" value="fitness">
+                        <label for="fitness">Fitness</label> <br>
+                        <input type="checkbox" id="pool" value="pool">
+                        <label for="pool">Pool</label> <br>
+                        <span class="more">+24 More</span>
+                    </div>
+                </section>
+                <section class="hotel-second">
+                    <div class="hotels-sort">
+                            <div class="hotel-sort-option">
+                                <h5>hotels</h5>
+                                <span>257 places</span>
+                            </div>
+                            <div class="hotel-sort-option">
+                                <h5>Motels</h5>
+                                <span>51 Places</span>
+                            </div>
+                            <div class="hotel-sort-option">
+                                <h5>Ressort</h5>
+                                <span>72 places</span>
+                            </div>
+                    </div>
+                    <div class="hotels">
+                        <div class="best-hotel">
+                            <img src="assets/images/istanbul.jpg" alt="">
+                            <div class="hotel-details">
+                                <h3>CVK Park Bosphorus Hotel Istanbul</h3>
+                                <div class="location">
+                                    <i class="ri-map-pin-fill"></i> 
+                                    <p>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
+                                </div>
+                                <div class="hotel-rating">
+                                    <img src="assets/images/five-star.png" alt="4.2 rating">
+                                    <p>5 star hotel</p>
+                                    <i class="ri-cup-fill"></i>
+                                    <p><span>20+ </span> Aminities</p>
+                                </div>
+                                <div class="hotel-reveiws">
+                                        <img src="assets/images/Button.jpg" alt="4.2 rating">
+                                        <h4>Very Good</h4>
+                                        <p>371 reviews</p>
+                                </div>
+                                <hr>
+                                <div class="hotel-btns">
+                                    <i class="ri-heart-line"></i>
+                                    <button class="buyNowbtn" >Buy NOW</button>
+                                    <a href="#slide">View Place</a>
+                                    
+                                </div>
+                            </div>
+                            <div class="hotel-pricing">
+                                <p>starting from <span>$204/night</span> excl tax</p>
+                            </div>
+                        </div>
+                        <div class="best-hotel">
+                            <img src="assets/images/abudhabi.jpg" alt="">
+                            <div class="hotel-details">
+                                
+                                <h3>CVK Park Bosphorus Hotel Istanbul</h3>
+                                <div class="location" >
+                                    <i class="ri-map-pin-fill"></i> 
+                                    <p>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
+                                </div>
+                                <div class="hotel-rating">
+                                    <img src="assets/images/five-star.png" alt="4.2 rating">
+                                    <p>5 star hotel</p>
+                                    <i class="ri-cup-fill"></i>
+                                    <p><span>20+ </span> Aminities</p>
+                                </div>
+                                <div class="hotel-reveiws">
+                                        <img src="assets/images/Button.jpg" alt="4.2 rating">
+                                        <h4>Very Good</h4>
+                                        <p>371 reviews</p>
+                                </div>
+                                <hr>
+                                <div class="hotel-btns">
+                                    <i class="ri-heart-line"></i>
+                                    <button class="buyNowbtn" >Buy NOW</button>
+                                    <a href="#slide">View Details</a>
+                                </div>
+                            </div>
+                            <div class="hotel-pricing">
+                                <p>starting from <span>$204/night</span> excl tax</p>
+                            </div>
+                        </div>
+                        <div class="best-hotel">
+                            <img src="assets/images/france.jpg" alt="">
+                            <div class="hotel-details">
+                                <h3>CVK Park Bosphorus Hotel Istanbul</h3>
+                                <div class="location">
+                                    <i class="ri-map-pin-fill"></i> 
+                                    <p>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
+                                </div>
+                                <div class="hotel-rating">
+                                    <img src="assets/images/five-star.png" alt="4.2 rating">
+                                    <p>5 star hotel</p>
+                                    <i class="ri-cup-fill"></i>
+                                    <p><span>20+ </span> Aminities</p>
+                                </div>
+                                <div class="hotel-reveiws">
+                                        <img src="assets/images/Button.jpg" alt="4.2 rating">
+                                        <h4>Very Good</h4>
+                                        <p>371 reviews</p>
+                                </div>
+                                <hr>
+                                <div class="hotel-btns">
+                                    <i class="ri-heart-line"></i>
+                                    <button class="buyNowbtn" >Buy NOW</button>
+                                    <a href="#slide">View Details</a>
+                                </div>
+                            </div>
+                            <div class="hotel-pricing">
+                                <p>starting from <span>$204/night</span> excl tax</p>
+                            </div>
+                        </div>
+                        <div class="best-hotel">
+                            <img src="assets/images/veince.jpg" alt="">
+                            <div class="hotel-details">
+                                
+                                <h3>CVK Park Bosphorus Hotel Istanbul</h3>
+                                <div class="location">
+                                    <i class="ri-map-pin-fill"></i> 
+                                    <p>Gümüssuyu Mah. Inönü Cad. No:8, Istanbul 34437</p>
+                                </div>
+                                <div class="hotel-rating">
+                                    <img src="assets/images/five-star.png" alt="4.2 rating">
+                                    <p>5 star hotel</p>
+                                    <i class="ri-cup-fill"></i>
+                                    <p><span>20+ </span> Aminities</p>
+                                </div>
+                                <div class="hotel-reveiws">
+                                        <img src="assets/images/Button.jpg" alt="4.2 rating">
+                                        <h4>Very Good</h4>
+                                        <p>371 reviews</p>
+                                </div>
+                                <hr>
+                                <div class="hotel-btns">
+                                    <i class="ri-heart-line"></i>
+                                    <button class="buyNowbtn" >Buy NOW</button>
+                                    <a href="#slide">View details</a>
+                                </div>
+                            </div>
+                            <div class="hotel-pricing">
+                                <p>starting from <span>$204/night</span> excl tax</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+               
+            </div>
+        </section>
+         <!-- END OF SECTION THREE-->
+
+         <!-- START OF SECTION FOUR -->
+        <section id="slide" class="faqs">
+            <div class="containerr">
+                <div class="faq-image">
+                    <img src="assets/images/faq.png" alt="">
+                </div>
+                <div class="faq-container">
+                    <h2>Any Doubts ? we're here to help !</h2>
+                    <p>We are here to help you with any questions you may have. If you don't find what you need, please contact us at</p>
+                    <address><a href="mailto:someone@golobe.com">mailto:someone@golobe.com</a></address>
+    
+                    <div id="accordion" class="accordion">
+                        <h3>Section 1</h3>
+                        <div>
+                          <p>
+                          Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer
+                          ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit
+                          amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. 
+                          </p>
+                        </div>
+                        <h3>Section 2</h3>
+                        <div>
+                          <p>
+                          Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet
+                          purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor
+                          velit, faucibus interdum tellus libero ac justo.
+                          </p>
+                        </div>
+                        <h3>Section 3</h3>
+                        <div>
+                          <p>
+                          Nam enim risus, molestie et, porta ac, aliquam ac, risus. Quisque lobortis.
+                          Phasellus pellentesque purus in massa. Aenean in pede. Phasellus ac libero
+                          ac tellus pellentesque semper. 
+                          </p>
+                        
+                        </div>
+                        <h3>Section 4</h3>
+                        <div>
+                          <p>
+                          Cras dictum. Pellentesque habitant morbi tristique senectus et netus
+                          et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in
+                          faucibus orci luctus et ultrices 
+                          </p>
+                          <p>
+                          Suspendisse eu nisl. Nullam ut libero. Integer dignissim consequat lectus.
+                          Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+                          inceptos himenaeos.
+                          </p>
+                        </div>
+                      </div>
+                       
+                </div>
+            </div>
+            
+        </section>
+        <!-- END OF SECTION FOUR-->
+
+    </main>
+    <!--fOOTER STARTED -->
+    <footer>
+        
+        <div class="newsletter">
+          <h3>Contact Us</h3>
+          <p>For any further queries</p>
+           <!-- CONTACT FORM -->
+          <div class="contact-form">
+
+            <form id="contact-form" action="get">
+              <label for="username">username</label>
+              <input type="text" id="username" name="username" placeholder="Name" required>
+    
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+              <br>
+              <label for="queries">Any Queries</label>
+              <textarea id="queries" name="queries" placeholder="Any Queries" required></textarea>
+    
+              <button id="contact-submit">Submit</button>
+            </form>
+          </div>
+            <div class="mailbox-image">
+              <img src="assets/images/emojione-v1_open-mailbox-with-lowered-flag-removebg-preview.png" alt="Mailbox Icon">
+            </div>
+          </div>
+    
+    
+        <div class="footer-content">
+          <div class="logo-social">
+            <div class="logo"><img src="assets/images/Logo-removebg-preview-removebg-preview.png" alt=""></div>
+            <div class="social-icons">
+              <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+            </div>
+          </div>
+    
+          <div class="footer-links">
+            <div>
+              <h3>Our Destinations</h3>
+              <p>Canada</p>
+              <p>Alaska</p>
+              <p>France</p>
+              <p>Iceland</p>
+            </div>
+            <div>
+              <h3>Our Activities</h3>
+              <p>Northern Lights</p>
+              <p>Cruising & sailing</p>
+              <p>Multi-activities</p>
+              <p>Kayaking</p>
+            </div>
+            <div>
+              <h3>Travel Blogs</h3>
+              <p>Bali Travel Guide</p>
+              <p>Sri Lanka Travel Guide</p>
+              <p>Peru Travel Guide</p>
+              <p>Bali Travel Guide</p>
+            </div>
+            <div>
+              <h3>About Us</h3>
+              <p>Our Story</p>
+              <p>Work with us</p>
+            </div>
+            <div>
+              <h3>Contact Us</h3>
+              <p>Our Story</p>
+              <p>Work with us</p>
+            </div>
+          </div>
+        </div>
+      </footer>
+       <!-- END OF fOOTER-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

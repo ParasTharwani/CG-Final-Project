@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- CSS Links -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://jqueryvalidation.org/files/demo/site-demos.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+    <!-- JS LINKS -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- START OF HEADER -->
+    <header>
+        <section class="count-down">
+            <h3 id="count">Holiday Season Off is ending in</h3>
+            <form action="">
+              
+                <input type="text" name="" id="days" value="">
+                <label for="days">Days</label>
+             
+                <input type="text" id="hours" value="">
+                <label for="hours">Hours</label>
+               
+                <input type="text" id="minutes" value="">
+                <label for="minutes">Minutes</label>
+               
+                <input type="text" id="seconds" value="">
+                <label for="seconds">Seconds</label>
+            </form>
+        </section>
+    
+        <div class="container">
+            
+            <nav class="my-nav">
+                <div class="find">
+                    <div >
+                        <span><i class="ri-plane-fill"></i></span>
+                        <a href="flight.html">Find Flight</a>
+                    </div>
+                    <div>
+                        <span><i class="ri-hotel-bed-fill"></i></span>
+                        <a href="hotels.html">Find Stay</a>
+                    </div>
+                    <div>
+                        <span><i class="ri-home-smile-2-fill"></i></span>
+                        <a href="index.html">Home</a>
+                    </div>
+                </div>
+                
+                    <img src="assets/images/Logo-removebg-preview-removebg-preview.jpg" alt="">
+                <div class="header-btns">
+                    <a href="login.html">Login</a>
+                    <a href="signup.html">Sign up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- END OF HEADER -->
+    <main>
+        <!-- START OF SECTION ONE  -->
+        <section class="one">
+            <div class="containerr">
+                <div class="hero">
+                    <h2>Make your Travel Wishlist we'll do the rest.</h2>
+                   <h5>special offers to suit your plan.</h5>
+                </div>
+            </div>
+        </section>
+        <!-- END OF SECTION ONE-->
+
+      <!-- START OF SECTION TWO -->
+        <section class="searching-flights">
+            <div class="containerr">
+                <div class="search-box">
+                    <div class="search-tabs">
+                        <i class="ri-plane-fill"></i>
+                        <a href="#" class="active">Flights</a>
+                    </div>
+                    <div class="input-group">
+                        <label for="locations">From - To</label>
+                        <input type="text" id="locations" placeholder="Lahore - Karachi">
+                    </div>
+                    <div class="input-group">
+                        <label for="trip">Trip</label>
+                        <select>
+                            <option value="return">Return</option>
+                            <option value="one-way">One-way</option>
+                        </select>
+                    </div>
+                    <div class="input-group">
+                        <label for="departure">Depart - Return</label>
+                        <input type="date" id="departure">
+                    </div>
+                    <div class="input-group">
+                        <select >
+                            <option value="passenger">Passenger</option>
+                            <option value="economy">economy</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- END OF SECTION TWO-->
+
+         <!-- START OF SECTION  THREE-->
+        <section class="flight-listing">
+            <div class="containerr">
+                <div class="flight-filter">
+                    <h2>Filters</h2>
+                    <div class="filter-group">
+                        <div class="selector">
+                            <h4>Price</h4>
+                            <span><i class="ri-arrow-up-s-line"></i></span>
+                        </div>
+                        <div class="range">
+
+                            <input type="range" value="635" min="300" max="1200" class="slider" id="range-slider">
+                            <span>$635</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="filter-group">
+                        <div class="selector">
+                            <h4>Departure Time</h4>
+                            <span><i class="ri-arrow-up-s-line"></i></span>
+                        </div>
+                        <div class="range">
+                            <input type="range" min="1" max="12" value="5">
+                            <span>05:00</span>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="rating">
+                        <div class="selector">
+                            <h4>Rating</h4>
+                            <span><i class="ri-arrow-up-s-line"></i></span>
+                        </div>
+                        <input type="checkbox" id="zero" name="rating" value="0">
+                        <label for="zero"> 0+</label>
+                        <input type="checkbox" id="one" name="rating" value="1">
+                        <label for="one"> 1+</label>
+                        <input type="checkbox" id="two" name="rating" value="2">
+                        <label for="two"> 2+</label>
+                        <input type="checkbox" id="three" name="rating" value="3">
+                        <label for="three"> 3+</label>
+                        <input type="checkbox" id="four" name="rating" value="4">
+                        <label for="four"> 4+</label>
+                    </div>
+                    <hr>
+                    <div class="Airlines">
+                        <div class="selector">
+                            <h4>Airlines</h4>
+                            <span><i class="ri-arrow-up-s-line"></i></span>
+                        </div>
+                        <input type="checkbox" id="emirates" value="Emirates">
+                        <label for="emirates">Emirates</label> <br>
+                        <input type="checkbox" id="flydxb" value="flydubai">
+                        <label for="flydxb">flydubai</label> <br>
+                        <input type="checkbox" id="Qatar" value="qatar">
+                        <label for="Qatar">Qatar</label> <br>
+                        <input type="checkbox" id="Etihad" value="Etihad">
+                        <label for="Etihad">Etihad</label> <br>
+
+                    </div>
+                    <hr>
+                    <div class="trips">
+                        <div class="selector">
+                            <h4>Trips</h4>
+                            <span><i class="ri-arrow-up-s-line"></i></span>
+                        </div>
+
+                        <input type="checkbox" id="round" value="Roundtrip">
+                        <label for="round">Round Trip</label> <br>
+                        <input type="checkbox" id="Onway" value="oneway">
+                        <label for="Onway">One way</label> <br>
+                        <input type="checkbox" id="MultiCity" value="MultiCity">
+                        <label for="MultiCity">MultiCity</label> <br>
+                    </div>
+                </div>
+                <div class="flights-sort">
+                    <div class="sortbar">
+                        <div class="sort-option">
+                            <h5>Cheapest</h5>
+                            <span>
+                                <p>$99 . 2h 18m</p>
+                            </span>
+                        </div>
+                        <div class="sort-option">
+                            <h5>Best</h5>
+                            <span>
+                                <p>$99 . 2h 18m</p>
+                            </span>
+                        </div>
+                        <div class="sort-option">
+                            <h5>Quickest</h5>
+                            <span>
+                                <p>$99 . 2h 18m</p>
+                            </span>
+                        </div>
+                        <div class="other-sort">
+                            <span><i class="ri-menu-line"></i></span>
+                            <h4>Other sort</h4>
+                        </div>
+                    </div>
+                    <div class="flights">
+                        <p>Showing 4 of 257 places</p>
+                        <div class="best-flights">
+                            <img src="assets/images/emirates.jpg" alt="Emirates">
+                            <div class="flight-detail">
+                                <div class="flight-reveiw">
+                                    <div class="reveiw">
+                                        <img src="assets/images/Button.jpg" alt="">
+                                        <h4> Very Good <span class="total-reveiws">54 reviews</span> </h4>
+                                    </div>
+                                    <div class="pricing">
+                                        <h5>Starting from <span>$104</span></h5>
+                                    </div>
+                                </div>
+                                <div class="flight-timing">
+                                    <i class="ri-checkbox-blank-line"></i>
+                                    <h4> 12:00 pm - 01-28 pm <span>
+                                            Emirates
+                                        </span></h4>
+                                    <p>Non-stop</p>
+                                    <p>2h 28m <span>EWR-BNA</span></p>
+                                </div>
+                                <div class="flight-timing">
+                                    <i class="ri-checkbox-blank-line"></i>
+                                    <h4> 12:00 pm - 01-28 pm <span>
+                                            Emirates
+                                        </span></h4>
+                                    <p>Non-stop</p>
+                                    <p>2h 28m <span>EWR-BNA</span></p>
+                                </div>
+                                <hr>
+                                <div class="flight-btns">
+                                    <i class="ri-heart-line"></i>
+                                    <button class="buyNowbtn" >Buy Now</button>
+                                    <a href="#move">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best-flights">
+                            <img src="assets/images/etihad.jpg" alt="Emirates">
+                            <div class="flight-detail">
+                                <div class="flight-reveiw">
+                                    <div class="reveiw">
+                                        <img src="assets/images/Button.jpg" alt="">
+                                        <h4> Very Good <span class="total-reveiws">54 reviews</span> </h4>
+                                    </div>
+                                    <div class="pricing">
+                                        <h5>Starting from <span>$104</span></h5>
+                                    </div>
+                                </div>
+                                <div class="flight-timing">
+                                    <i class="ri-checkbox-blank-line"></i>
+                                    <h4> 12:00 pm - 01-28 pm <span>
+                                            <p>Emirates</p>
+                                        </span></h4>
+                                    <p>Non-stop</p>
+                                    <p>2h 28m <span>EWR-BNA</span></p>
+                                </div>
+                                <div class="flight-timing">
+                                    <i class="ri-checkbox-blank-line"></i>
+                                    <h4> 12:00 pm - 01-28 pm <span>
+                                            Emirates
+                                        </span></h4>
+                                    <p>Non-stop</p>
+                                    <p>2h 28m <span>EWR-BNA</span></p>
+                                </div>
+                                <hr>
+                                <div class="flight-btns">
+                                    <i class="ri-heart-line"></i>
+                                    <button class="buyNowbtn" >Buy NOW</button>
+                                    <a href="#move">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best-flights">
+                            <img src="assets/images/flydxb.jpg" alt="Emirates">
+                            <div class="flight-detail">
+                                <div class="flight-reveiw">
+                                    <div class="reveiw">
+                                        <img src="assets/images/Button.jpg" alt="">
+                                        <h4> Very Good <span class="total-reveiws">54 reviews</span> </h4>
+                                    </div>
+                                    <div class="pricing">
+                                        <h5>Starting from <span>$104</span></h5>
+                                    </div>
+                                </div>
+                                <div class="flight-timing">
+                                    <i class="ri-checkbox-blank-line"></i>
+                                    <h4> 12:00 pm - 01-28 pm <span>
+                                            Emirates
+                                        </span></h4>
+                                    <p>Non-stop</p>
+                                    <p>2h 28m <span>EWR-BNA</span></p>
+                                </div>
+                                <div class="flight-timing">
+                                    <i class="ri-checkbox-blank-line"></i>
+                                    <h4> 12:00 pm - 01-28 pm <span>
+                                            Emirates
+                                        </span></h4>
+                                    <p>Non-stop</p>
+                                    <p>2h 28m <span>EWR-BNA</span></p>
+                                </div>
+                                <hr>
+                                <div class="flight-btns">
+                                    <i class="ri-heart-line"></i>
+                                    <button class="buyNowbtn" >Buy NOW</button>
+                                    <a href="#move">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="best-flights">
+                            <img src="assets/images/qatarAir.jpg" alt="Emirates">
+                            <div class="flight-detail">
+                                <div class="flight-reveiw">
+                                    <div class="reveiw">
+                                        <img src="assets/images/Button.jpg" alt="">
+                                        <h4> Very Good <span class="total-reveiws">54 reviews</span> </h4>
+                                    </div>
+                                    <div class="pricing">
+                                        <h5>Starting from <span>$104</span></h5>
+                                    </div>
+                                </div>
+                                <div class="flight-timing">
+                                    <i class="ri-checkbox-blank-line"></i>
+                                    <h4> 12:00 pm - 01-28 pm <span>
+                                            Emirates
+                                        </span></h4>
+                                    <p>Non-stop</p>
+                                    <p>2h 28m <span>EWR-BNA</span></p>
+                                </div>
+                                <div class="flight-timing">
+                                    <i class="ri-checkbox-blank-line"></i>
+                                    <h4> 12:00 pm - 01-28 pm <span>
+                                            Emirates
+                                        </span></h4>
+                                    <p>Non-stop</p>
+                                    <p>2h 28m <span>EWR-BNA</span></p>
+                                </div>
+                                <hr>
+                                <div class="flight-btns">
+                                    <i class="ri-heart-line"></i>
+                                    <button class="buyNowbtn" >Buy Now</button>
+                                    <a href="#move">View Details</a>
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#">Show More Results</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- END OF SECTION THREE-->
+
+          <!-- START OF SECTION FOUR -->
+        <section id="move" class="faqs">
+            <div class="containerr">
+                <div class="faq-image">
+                    <img src="assets/images/faq.png" alt="">
+                </div>
+                <div class="faq-container">
+                    <h2>Any Doubts ? we're here to help !</h2>
+                    <p>We are here to help you with any questions you may have. If you don't find what you need, please contact us at</p>
+                    <address><a href="mailto:someone@golobe.com">mailto:someone@golobe.com</a></address>
+    
+                    <div id="accordion" class="accordion">
+                        <h4>How do I book a trip? </h4>
+                        <div>
+                          <p>
+                            You can book a trip directly on our website by selecting your destination, dates, and preferred package..
+                          </p>
+                        </div>
+                        <h4> What is your cancellation policy?</h4>
+                        <div>
+                          <p>
+                            Our cancellation policy varies by package. Generally, you can cancel up to 30 days before your departure for a partial refund.
+                          </p>
+                        </div>
+                        <h4> Can I change the dates of my booking?</h4>
+                        <div>
+                          <p>
+                            Yes, we allow date changes for most bookings, subject to availability. A small change fee may apply, depending on the timing and the package type.
+                          </p>
+                        </div>
+                        <h4> Are there any hidden fees or additional charges?</h4>
+                        <div>
+                          <p>
+                            No, our pricing is transparent, and all costs are disclosed at the time of booking.
+                          </p>
+                        </div>
+                      </div>
+                       
+                </div>
+            </div>
+        </section>
+       <!-- END OF SECTION FOUR-->
+    </main>
+    <!--fOOTER STARTED -->
+    <footer>
+   
+        <div class="newsletter">
+          <h3>Contact Us</h3>
+          <p>For any further queries</p>
+           <!-- CONTACT FORM -->
+          <div class="contact-form">
+
+            <form id="contact-form" action="get">
+              <label for="username">username</label>
+              <input type="text" id="username" name="username" placeholder="Name" required>
+    
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Email" required>
+              <br>
+              <label for="queries">Any Queries</label>
+              <textarea id="queries" name="queries" placeholder="Any Queries" required></textarea>
+    
+              <button id="contact-submit">Submit</button>
+            </form>
+          </div>
+
+            <div class="mailbox-image">
+              <img src="assets/images/emojione-v1_open-mailbox-with-lowered-flag-removebg-preview.png" alt="Mailbox Icon">
+            </div>   
+        </div>
+        <div class="footer-content">
+          <div class="logo-social">
+            <div class="logo"><img src="assets/images/Logo-removebg-preview-removebg-preview.png" alt=""></div>
+            <div class="social-icons">
+              <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+              <a href="#"><i class="ri-twitter-fill"></i></a>
+              <a href="#"><i class="ri-youtube-fill"></i></a>
+              <a href="#"><i class="ri-instagram-fill"></i></a>
+            </div>
+          </div>
+    
+          <div class="footer-links">
+            <div>
+              <h3>Our Destinations</h3>
+              <p>Canada</p>
+              <p>Alaska</p>
+              <p>France</p>
+              <p>Iceland</p>
+            </div>
+            <div>
+              <h3>Our Activities</h3>
+              <p>Northern Lights</p>
+              <p>Cruising & sailing</p>
+              <p>Multi-activities</p>
+              <p>Kayaking</p>
+            </div>
+            <div>
+              <h3>Travel Blogs</h3>
+              <p>Bali Travel Guide</p>
+              <p>Sri Lanka Travel Guide</p>
+              <p>Peru Travel Guide</p>
+              <p>Bali Travel Guide</p>
+            </div>
+            <div>
+              <h3>About Us</h3>
+              <p>Our Story</p>
+              <p>Work with us</p>
+            </div>
+            <div>
+              <h3>Contact Us</h3>
+              <p>Our Story</p>
+              <p>Work with us</p>
+            </div>
+          </div>
+        </div>
+
+    </footer>
+     <!-- END OF fOOTER-->
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

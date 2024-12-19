@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    
+  <!-- START OF HEADER -->
+  <header>
+    <section class="count-down">
+        <h3 id="count">Holiday Season Off is ending in</h3>
+        <form action="counter">
+          
+            <input type="text" id="days" value="">
+            <label for="days">Days</label>
+         
+            <input type="text" id="hours" value="">
+            <label for="hours">Hours</label>
+           
+            <input type="text" id="minutes" value="">
+            <label for="minutes">Minutes</label>
+           
+            <input type="text" id="seconds" value="">
+            <label for="seconds">Seconds</label>
+        </form>
+    </section>
+
+    <div class="container">
+        
+        <nav class="my-nav">
+            <div class="find">
+                <div >
+                    <span><i class="ri-plane-fill"></i></span>
+                    <a href="flight.html">Find Flight</a>
+                </div>
+                <div>
+                    <span><i class="ri-hotel-bed-fill"></i></span>
+                    <a href="hotels.html">Find Stay</a>
+                </div>
+                <div>
+                    <span><i class="ri-home-smile-2-fill"></i></span>
+                    <a href="index.html">Home</a>
+                </div>
+            </div>
+            
+                <img src="assets/images/Logo-removebg-preview-removebg-preview.jpg" alt="">
+            <div class="header-btns">
+                <a href="login.html">Login</a>
+                <a href="signup.html">Sign up</a>
+            </div>
+        </nav>
+    </div>
+ </header>
+<!-- END OF HEADER -->
+
+
+    <main>
+ <!-- MAIN SECTION-->
+        <div class="big-boxx">
+        <div class="container-one">
+            <div class="image-sectionn">
+                <img src="assets/images/login.jpg" alt="Slider Image">
+                <div class="slider-indicatorrs">
+                    <span class="indicatorr active"></span>
+                    <span class="indicatorr"></span>
+                    <span class="indicatorr"></span>
+                </div>
+            </div>
+             <!-- START OF SIGN-UP SECTION-->
+            <div class="signup-sectionn">
+                <img src="assets/images/mainlogo.png" alt="Golobe Logo" class="logooo">
+                <h2>Sign up</h2>
+                <p>Let's get you all set up so you can access your personal account.</p>
+                
+                <form id="signup-form" class="signup-formm">
+                    <div class="form-groupp">
+                        <label for="">First Name</label>
+                        <input type="text" placeholder="First Name" required>
+                        <label for="">Last Name</label>
+                        <input type="text" placeholder="Last Name" required>
+                    </div>
+                    
+                    <div class="form-groupp">
+                        <label for="">Email</label>
+                        <input type="email" placeholder="Email" required>
+                        <label for="">Telephone</label>
+                        <input type="tel" placeholder="Phone Number" required>
+                    </div>
+                    <label for="">Password</label>
+                    <input type="password" placeholder="Password" required>
+                    <label for="">Confirm password</label>
+                    <input type="password" placeholder="Confirm Password" required>
+                    
+                    <label class="terms">
+                        <input type="checkbox" required>
+                        I agree to all the <a href="#">Terms and Privacy Policies</a>
+                    </label>
+                    
+                    <button type="submit" id="signup-btn" class="signup-buttonn">Create account</button>
+                    
+                    <p class="login-textt">Already have an account? <a href="#">Login</a></p>
+                    
+                    <p class="or-signupp">Or Sign up with</p>
+                    <div class="social-signupp">
+                        <button class="social-buttonn"><i class="fab fa-facebook-f"></i></button>
+                        <button class="social-buttonn"><i class="fab fa-google"></i></button>
+                        <button class="social-buttonn"><i class="fab fa-apple"></i></button>
+                    </div>
+                </form>
+            </div>
+            <!-- END OF SIGN-UP SECTION-->
+        </div>
+        </div>
+    </main>
+    <!-- END OF MAIN SECTION -->
+
+    
+ <!--fOOTER STARTED -->
+<footer>
+    <div class="newsletter">
+        <h3>Contact Us</h3>
+        <p>For any further queries</p>
+        <!-- CONTACT FORM -->
+        <div class="contact-form">
+          <form id="contact-form" action="get">
+            <label for="username">username</label>
+            <input type="text" id="username" name="username" placeholder="Name" required>
+  
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <br>
+            <label for="queries">Any Queries</label>
+            <textarea id="queries" name="queries" placeholder="Any Queries" required></textarea>
+  
+            <button id="contact-submit">Submit</button>
+          </form>
+        </div>
+       
+
+        <div class="mailbox-image">
+          <img src="assets/images/emojione-v1_open-mailbox-with-lowered-flag-removebg-preview.png" alt="Mailbox Icon">
+        </div>
+      </div>
+  <!-- CONTACT FORM ENDED -->
+
+      <div class="footer-content">
+        <div class="logo-social">
+          <div class="logo"><img src="assets/images/Logo-removebg-preview-removebg-preview.png" alt=""></div>
+          <div class="social-icons">
+            <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+            <a href="#"><i class="ri-twitter-fill"></i></a>
+            <a href="#"><i class="ri-youtube-fill"></i></a>
+            <a href="#"><i class="ri-instagram-fill"></i></a>
+          </div>
+        </div>
+  
+        <div class="footer-links">
+          <div>
+            <h3>Our Destinations</h3>
+            <p>Canada</p>
+            <p>Alaska</p>
+            <p>France</p>
+            <p>Iceland</p>
+          </div>
+          <div>
+            <h3>Our Activities</h3>
+            <p>Northern Lights</p>
+            <p>Cruising & sailing</p>
+            <p>Multi-activities</p>
+            <p>Kayaking</p>
+          </div>
+          <div>
+            <h3>Travel Blogs</h3>
+            <p>Bali Travel Guide</p>
+            <p>Sri Lanka Travel Guide</p>
+            <p>Peru Travel Guide</p>
+            <p>Bali Travel Guide</p>
+          </div>
+          <div>
+            <h3>About Us</h3>
+            <p>Our Story</p>
+            <p>Work with us</p>
+          </div>
+          <div>
+            <h3>Contact Us</h3>
+            <p>Our Story</p>
+            <p>Work with us</p>
+          </div>
+        </div>
+      </div>
+</footer>
+ <!-- END OF fOOTER-->
+<script src="assets/js/signup.js"></script>
+</body>
+</html>

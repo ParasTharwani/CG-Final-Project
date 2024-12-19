@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Travel Planner</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.css" rel="stylesheet" />
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" />
+  <link rel="stylesheet" type="text/css"
+    href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" />
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+</head>
+
+<body>
+     <!-- Start of Section One -->
+  <div class='pre-loader'>
+    <img class='loading-gif' alt='loading' src="https://media0.giphy.com/media/11FuEnXyGsXFba/source.gif" />
+  </div>
+  <header>
+    <div class="container-five">
+      <nav class="nav-links">
+        <span><i class="ri-plane-fill"></i></span>
+        <a href="flight.html">Find Flight</a>
+        <span><i class="ri-hotel-bed-fill"></i></span>
+        <a href="hotels.html">Find Stays</a>
+      </nav>
+      <div class="logo"><img src="assets/images/Logo-removebg-preview-removebg-preview-Copy.png" alt="">
+      </div>
+      <div class="auth-buttons">
+        <a href="login.html" class="login">Login</a>
+        <a href="signup.html" class="signup">Sign up</a>
+      </div>
+    </div>
+  </header>
+   <!-- End of Section One -->
+  <main>
+
+   <!-- Start of Section Two -->
+    <div class="containerr">
+      <section class="hero-one">
+
+        <h1>Helping Others</h1>
+        <h2>LIVE & TRAVEL</h2>
+        <p>Special offers to suit your plan</p>
+
+        <div class="search-box">
+          <div class="search-tabs">
+            <i class="ri-plane-fill"></i>
+            <a href="#" class="active">Flights</a>
+            <i class="ri-hotel-bed-fill"></i>
+            <a href="#">Stays</a>
+          </div>
+          <div class="input-group">
+            <label>From - To</label>
+            <input type="text" placeholder="Lahore - Karachi">
+          </div>
+          <div class="input-group">
+            <label>Trip</label>
+            <select>
+              <option value="return">Return</option>
+              <option value="one-way">One-way</option>
+            </select>
+          </div>
+          <div class="input-group">
+            <label>Depart - Return</label>
+            <input type="date">
+          </div>
+          <div class="input-group">
+            <label>Passenger - Class</label>
+            <select>
+              <option value="passenger">Passenger</option>
+              <option value="economy">economy</option>
+            </select>
+          </div>
+          <div class="promo">
+            <a href="#">+ Add Promo Code</a>
+            <a href="#" class="show-flights">Show Flights</a>
+          </div>
+        </div>
+      </section>
+    </div>
+       <!-- End of Section Two -->
+
+        <!-- Start of Section Three -->
+    <div class="containerr">
+      <div class="destination-section">
+        <h2>Plan your perfect trip</h2>
+        <p>Search Flights & Places Hire to our most popular destinations</p>
+        <button class="see-more-button">See more places</button>
+      </div>
+
+      <section class="trip-section">
+        <div class="grid-container">
+          <div class="card">
+            <img src="assets/images/Frame74.jpg" alt="Istanbul">
+            <div class="card-content">
+              <h3>Istanbul, Turkey</h3>
+              <p>Flights · Hotels · Resorts</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/Rectangle3.jpg" alt="Sydney">
+            <div class="card-content">
+              <h3>Sydney, Australia</h3>
+              <p>Flights · Hotels · Resorts</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/Frame197.jpg" alt="Baku">
+            <div class="card-content">
+              <h3>Baku, Azerbaijan</h3>
+              <p>Flights · Hotels · Resorts</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/Rectangle4.jpg" alt="Malé">
+            <div class="card-content">
+              <h3>Malé, Maldives</h3>
+              <p>Flights · Hotels · Resorts</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/Rectangle3(1).jpg" alt="Paris">
+            <div class="card-content">
+              <h3>Paris, France</h3>
+              <p>Flights · Hotels · Resorts</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/Rectangle4(1).jpg" alt="New York">
+            <div class="card-content">
+              <h3>New York, US</h3>
+              <p>Flights · Hotels · Resorts</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/Rectangle3(2).jpg" alt="London">
+            <div class="card-content">
+              <h3>London, UK</h3>
+              <p>Flights · Hotels · Resorts</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/Rectangle3(3).jpg" alt="Tokyo">
+            <div class="card-content">
+              <h3>Tokyo, Japan</h3>
+              <p>Flights · Hotels · Resorts</p>
+            </div>
+          </div>
+          <div class="card">
+            <img src="assets/images/Rectangle4(2).jpg" alt="Dubai">
+            <div class="card-content">
+              <h3>Dubai, UAE</h3>
+              <p>Flights · Hotels · Resorts</p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+     <!-- End of Section Three -->
+
+       <!-- Start of Section Four -->
+    <div class="containerr">
+      <div class="card-containerr">
+
+        <div class="cardd" style="background-image: url('assets/images/Rectangle40.jpg');">
+          <div class="overlay">
+            <h2>Flights</h2>
+            <p>Search Flights & Places Hire to our most popular destinations</p>
+            <a href="flight.html" class="btn">
+              <i class="icon">✈️</i> Show Flights
+            </a>
+          </div>
+        </div>
+
+
+        <div class="cardd" style="background-image: url('assets/images/Rectangle41.jpg');">
+          <div class="overlay">
+            <h2>Hotels</h2>
+            <p>Search hotels & Places Hire to our most popular destinations</p>
+            <a href="hotels.html" class="btn">
+              <i class="icon">🏨</i> Show Hotels
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="containerr">
+      <section class="reviews-section">
+        <div class="section-header">
+          <h2>Reviews</h2>
+          <p>What people say about Golobe facilities</p>
+        </div>
+        <section class="containerr">
+          <!-- Slick Carousel -->
+          <div class="reviews-carousel">
+            <div class="review-card">
+              <p class="quote">“A real sense of community, nurtured”</p>
+              <p class="description">Really appreciate the help and support from the staff during these tough times.
+                Shoutout to Katie for recommending this web.</p>
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="author">Olga</p>
+              <p class="location">Weave Studios – Kai Tak</p>
+              <div class="source">
+                <i class="ri-google-fill"></i> Google
+              </div>
+              <img src="assets/images/Rectangle36.jpg" alt="Review Image" class="review-image">
+            </div>
+            <div class="review-card">
+              <p class="quote">“A real sense of community, nurtured”</p>
+              <p class="description">Really appreciate the help and support from the staff during these tough times.
+                Shoutout to Katie for recommending this web.</p>
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="author">Olga</p>
+              <p class="location">Weave Studios – Kai Tak</p>
+              <div class="source">
+                <i class="ri-google-fill"></i> Google
+              </div>
+              <img src="assets/images/Rectangle36(1).jpg" alt="Review Image" class="review-image">
+            </div>
+            <!-- Repeat the .review-card structure for each review -->
+            <div class="review-card">
+              <p class="quote">“A real sense of community, nurtured”</p>
+              <p class="description">Really appreciate the help and support from the staff during these tough times.
+                Shoutout to Katie for recommending this web.</p>
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="author">Olga</p>
+              <p class="location">Weave Studios – Kai Tak</p>
+              <div class="source">
+                <i class="ri-google-fill"></i> Google
+              </div>
+              <img src="assets/images/Rectangle36(2).jpg" alt="Review Image" class="review-image">
+            </div>
+            <div class="review-card">
+              <p class="quote">“A real sense of community, nurtured”</p>
+              <p class="description">Really appreciate the help and support from the staff during these tough times.
+                Shoutout to Katie for recommending this web.</p>
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="author">Olga</p>
+              <p class="location">Weave Studios – Kai Tak</p>
+              <div class="source">
+                <i class="ri-google-fill"></i> Google
+              </div>
+              <img src="assets/images/Rectangle36.jpg" alt="Review Image" class="review-image">
+            </div>
+            <div class="review-card">
+              <p class="quote">“A real sense of community, nurtured”</p>
+              <p class="description">Really appreciate the help and support from the staff during these tough times.
+                Shoutout to Katie for recommending this web.</p>
+              <div class="rating">
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+                <i class="ri-star-fill"></i>
+              </div>
+              <p class="author">Olga</p>
+              <p class="location">Weave Studios – Kai Tak</p>
+              <div class="source">
+                <i class="ri-google-fill"></i> Google
+              </div>
+              <img src="assets/images/Rectangle36(1).jpg" alt="Review Image" class="review-image">
+            </div>
+          </div>
+        </section>
+
+      </section>
+      <div class="calender">
+        <h3> Book your trips according to your schedules !!</h3>
+        <iframe
+          src="https://calendar.google.com/calendar/embed?src=5797be967a48e4f3e8a31036439b05d68da7d8db74a48baaca1952cc21eb19e7%40group.calendar.google.com&ctz=Asia%2FKarachi"
+          style="border: 0" width="400" height="400" scrolling="no"></iframe>
+      </div>
+    </div>
+   <!-- End of Section  Four -->
+  </main>
+     <!-- start of Footer -->
+  <footer>
+     <!-- start of Contact Form -->
+    <div class="newsletter">
+      <h3>Contact Us</h3>
+      <p>For any further queries</p>
+      <div class="contact-form">
+
+        <form id="contact-form" action="get">
+          <label for="username">username</label>
+          <input type="text" id="username" name="username" placeholder="Name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" placeholder="Email" required>
+          <br>
+          <label for="queries">Any Queries</label>
+          <textarea id="queries" name="queries" placeholder="Any Queries" required></textarea>
+
+          <button id="contact-submit">Submit</button>
+        </form>
+      </div>
+      <div class="mailbox-image">
+        <img src="assets/images/emojione-v1_open-mailbox-with-lowered-flag-removebg-preview.png" alt="Mailbox Icon">
+      </div>
+    </div>
+     <!-- End of CONTACT FORM -->
+    <div class="footer-content">
+      <div class="logo-social">
+        <div class="logo"><img src="assets/images/Logo-removebg-preview-removebg-preview.png" alt=""></div>
+        <div class="social-icons">
+          <a href="#"><i class="ri-facebook-circle-fill"></i></a>
+          <a href="#"><i class="ri-twitter-fill"></i></a>
+          <a href="#"><i class="ri-youtube-fill"></i></a>
+          <a href="#"><i class="ri-instagram-fill"></i></a>
+        </div>
+      </div>
+
+      <div class="footer-links">
+        <div>
+          <h3>Our Destinations</h3>
+          <p>Canada</p>
+          <p>Alaska</p>
+          <p>France</p>
+          <p>Iceland</p>
+        </div>
+        <div>
+          <h3>Our Activities</h3>
+          <p>Northern Lights</p>
+          <p>Cruising & sailing</p>
+          <p>Multi-activities</p>
+          <p>Kayaking</p>
+        </div>
+        <div>
+          <h3>Travel Blogs</h3>
+          <p>Bali Travel Guide</p>
+          <p>Sri Lanka Travel Guide</p>
+          <p>Peru Travel Guide</p>
+          <p>Bali Travel Guide</p>
+        </div>
+        <div>
+          <h3>About Us</h3>
+          <p>Our Story</p>
+          <p>Work with us</p>
+        </div>
+        <div>
+          <h3>Contact Us</h3>
+          <p>Our Story</p>
+          <p>Work with us</p>
+        </div>
+      </div>
+    </div>
+  </footer>
+ <!-- End of Section  Footer -->
+  <script src="assets/js/index.js"></script>
+
+</body>
+
+</html>
